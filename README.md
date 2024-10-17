@@ -26,3 +26,4 @@ Bộ dữ liệu văn bản có 27977 mẫu văn bản đã được xử lý 1 
   - MLP
   - RNN
 
+### Reference Drive: [Mental Health Corpus Reference](https://drive.google.com/drive/u/1/folders/11GuJep29z7McalT862tMo4iGPzP-EAg3)
