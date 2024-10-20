@@ -27,3 +27,15 @@ Bộ dữ liệu văn bản có 27977 mẫu văn bản đã được xử lý 1 
   - RNN
 
 ### Reference Drive: [Mental Health Corpus Reference](https://drive.google.com/drive/u/1/folders/11GuJep29z7McalT862tMo4iGPzP-EAg3)
+
+# Tiến độ dự án
+
+### 20/10/2024
+- (yuk) Đưa ra 1 bản corpus đã clean mẫu, sẽ dựa vào quy trình tạo ra bộ corpus này để thực hiện 1 notebook formal
+- (yuk) Sẽ thực hiện các notebook formal để phân tích bộ corpus raw, cleaned, và so sánh chúng
+- (yuk) Gợi ý: cần thực hiện trước các thí nghiệm về các sự kết hợp sau:
+  - Vector hóa: TF - IDF, W2V (Skip-gram)
+  - Giảm chiều: PCA, LDA (nhớ standardize trước khi fit và đặc biệt tránh data leakage (`fit_transfrom` trên bộ train, `transform` trên bộ test))
+  - Phân cụm: K-means, GMM (chưa tìm hiểu)
+  - Phân loại: Logistic Regression, SVM, MLP
+  - Ngoài ra cần tìm hiểu thêm về Regularization, cách chọn parameter cho các model Vector hóa, từ các thí nghiệm đã thực hiện cho thấy các classifier rất dễ overfit
