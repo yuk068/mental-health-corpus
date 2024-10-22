@@ -39,3 +39,7 @@ Bộ dữ liệu văn bản có 27977 mẫu văn bản đã được xử lý 1 
   - Phân cụm: K-means, GMM (chưa tìm hiểu)
   - Phân loại: Logistic Regression, SVM, MLP
   - Ngoài ra cần tìm hiểu thêm về Regularization, cách chọn parameter cho các model Vector hóa, từ các thí nghiệm đã thực hiện cho thấy các classifier rất dễ overfit
+ 
+### 22/10/2024
+- (yuk) Đưa ra 1 notebook chính thức phân tích bộ dữ liệu gốc, sẽ dựa vào để dọn dữ liệu và đưa ra 1 bộ dữ liệu mới
+- (yuk) Sau khi đưa ra 1 bộ dữ liệu mới, sẽ so sánh bộ cleaned với bộ raw
