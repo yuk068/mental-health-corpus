@@ -1,1 +1,3 @@
 https://www.kaggle.com/datasets/reihanenamdari/mental-health-corpus/data
+Basics of analyzing a corpus
+https://www.torosceviri.info/wp-content/uploads/2022/03/ch10.pdf
