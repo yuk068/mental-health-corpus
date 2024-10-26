@@ -20,7 +20,7 @@ Bộ dữ liệu văn bản có 27977 mẫu văn bản đã được xử lý 1 
   - GMM (Gaussian Mixture Model)
 - Phân loại dữ liệu:
   - KNN (K-Nearest Neighbors)
-  - Decision Tree
+  - Random Forest
   - Logistic Regression
   - SVM (Support Vector Machine)
 
