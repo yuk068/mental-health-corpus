@@ -48,3 +48,6 @@ Bộ dữ liệu văn bản có 27977 mẫu văn bản đã được xử lý 1 
 - (yuk) Chốt lại về nội dung nghiên cứu, báo cáo.
 - (yuk) Sẽ thực hiện thêm các Notebook thực hiện tất cả các nội dung còn lại.
 - (yuk) Sẽ đưa ra các phỏng đoán và nhận xét, cần được kiểm chứng với các nguồn đáng tin cậy.
+
+### 01/11/2024
+- (yuk) Bổ sung các Density 2D Plot tại `./plots/2D`
