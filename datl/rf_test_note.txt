@@ -1,0 +1,39 @@
+Kết quả từ mô hình Random Forest:
+
+1.Cấu hình đầu tiên:
+    * Tham số: {'n_estimators': 10, 'max_depth': 5, 'max_features': 10, 'min_samples_split': 5, 'min_samples_leaf': 2}
+    * Độ chính xác: 79%
+    * Mô hình cho thấy hiệu suất tương đối ổn, nhưng độ chính xác không cao. Với số lượng cây (n_estimators) khá thấp
+                và độ sâu tối đa bị giới hạn (max_depth=5), khả năng học của mô hình bị hạn chế.
+
+2. Cấu hình thứ hai:
+    * Tham số: {'n_estimators': 50, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}
+    * Độ chính xác: 89%
+    * Đây là cấu hình cho thấy sự cải thiện đáng kể về hiệu suất. Việc tăng số lượng cây và không giới hạn độ sâu 
+                        giúp mô hình học tốt hơn, trong khi việc điều chỉnh max_features và min_samples_leaf cũng 
+                        đã tối ưu hóa khả năng phân loại.
+
+3. Cấu hình thứ ba:
+    * Tham số: {'n_estimators': 100, 'max_depth': 10, 'max_features': 'log2', 'min_samples_split': 10, 'min_samples_leaf': 4}
+    * Độ chính xác: 85%
+    * Cấu hình này mang lại kết quả tốt, mặc dù không cao bằng cấu hình thứ hai. 
+        Giới hạn độ sâu giúp tránh overfitting nhưng cũng có thể hạn chế khả năng học. 
+        Thay đổi số lượng đặc trưng (max_features) và mẫu tối thiểu để tách nút (min_samples_split) 
+        cũng ảnh hưởng đến khả năng phân loại.
+
+Nhận xét chung:
+    * Tác động của số lượng cây (n_estimators):  
+            Việc tăng số lượng cây trong Random Forest đã cải thiện rõ rệt hiệu suất. 
+            Các cấu hình có số cây lớn hơn cho thấy độ chính xác cao hơn, 
+            cho thấy sự cần thiết của việc sử dụng số lượng cây đủ lớn để có thể đạt được độ chính xác tốt hơn.
+
+    * Điều chỉnh độ sâu cây (max_depth):
+            Giới hạn độ sâu giúp kiểm soát mức độ phức tạp của mô hình, tuy nhiên, 
+            không nên giới hạn quá mức nếu cần mô hình có khả năng học phức tạp hơn.
+
+    * Tham số khác: 
+            Các tham số như max_features, min_samples_split, và min_samples_leaf 
+            cũng đóng vai trò quan trọng trong việc điều chỉnh mô hình và ngăn ngừa overfitting.
+
+
+    
