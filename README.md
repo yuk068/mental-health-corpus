@@ -22,7 +22,7 @@ Bộ dữ liệu văn bản có 27977 mẫu văn bản đã được xử lý 1 
   - KNN (K-Nearest Neighbors)
   - Random Forest
   - Logistic Regression
-  - SVM (Support Vector Machine)
+  - MLP (Multilayer Perceptron)
 
 
 ### Reference Drive: [Mental Health Corpus Reference](https://drive.google.com/drive/u/1/folders/11GuJep29z7McalT862tMo4iGPzP-EAg3)
@@ -51,3 +51,7 @@ Bộ dữ liệu văn bản có 27977 mẫu văn bản đã được xử lý 1 
 
 ### 01/11/2024
 - (yuk) Bổ sung các Density 2D Plot tại `./plots/2D`
+
+### 06/11/2024
+- Đổi từ SVM sang MLP
+- (yuk) Bổ sung thêm 1 số notebooks chính thức, tới LSA và KNN, chưa hoàn chỉnh: LSA và KNN, còn thiếu: K-Means, GMM, Logistic Regresion, Random Forest, MLP.
