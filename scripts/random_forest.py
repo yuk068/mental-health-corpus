@@ -1,8 +1,6 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.decomposition import TruncatedSVD
 
 # Load the data
@@ -27,26 +25,26 @@ lsa = TruncatedSVD(n_components=n_components, random_state=42)
 X_train_tfidf = lsa.fit_transform(X_train_tfidf)
 X_test_tfidf = lsa.transform(X_test_tfidf)
 
-# Values of k to test
-k_values = [1, 5, 10, 50, 100, 200, 500]
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
-# Loop through each k and evaluate the model
-for k in k_values:
-    print(f"\nEvaluating KNN with k={k}")
+# Initialize the Random Forest model
+rf_model = RandomForestClassifier(n_estimators=50, random_state=42)
 
-    # Initialize KNN with cosine distance
-    knn = KNeighborsClassifier(n_neighbors=k, metric='cosine')
+# Train the model on the training data
+rf_model.fit(X_train_tfidf, y_train)
 
-    # Fit the model
-    knn.fit(X_train_tfidf, y_train)
+# Make predictions on the test data
+y_pred = rf_model.predict(X_test_tfidf)
 
-    # Predict on test set
-    y_pred = knn.predict(X_test_tfidf)
+# Evaluate the model
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Accuracy: {accuracy:.4f}")
 
-    # Print classification report
-    print("Classification Report:")
-    print(classification_report(y_test, y_pred))
+# Classification report for detailed metrics
+print("Classification Report:")
+print(classification_report(y_test, y_pred))
 
-    # Print confusion matrix
-    print("Confusion Matrix:")
-    print(confusion_matrix(y_test, y_pred))
+# Confusion matrix for additional insights
+print("Confusion Matrix:")
+print(confusion_matrix(y_test, y_pred))

@@ -21,7 +21,7 @@ tfidf = TfidfVectorizer(max_features=3500)
 X_train_tfidf = tfidf.fit_transform(X_train)
 X_test_tfidf = tfidf.transform(X_test)
 
-n_components = 500
+n_components = 100
 
 lsa = TruncatedSVD(n_components=n_components, random_state=42)
 X_train_tfidf = lsa.fit_transform(X_train_tfidf)

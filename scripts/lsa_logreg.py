@@ -28,15 +28,8 @@ for train_index, test_index in kf.split(X, y):
     X_train_tfidf = tfidf.fit_transform(X_train)
     X_test_tfidf = tfidf.transform(X_test)
 
-    # Step 2: LSA dimensionality reduction on TF-IDF
-    # Initial SVD fit on training TF-IDF data to find components for 80% variance
-    initial_svd = TruncatedSVD(n_components=1500, random_state=42)
-    initial_svd.fit(X_train_tfidf)
-    cumulative_variance = np.cumsum(initial_svd.explained_variance_ratio_)
-    n_components_80_var = np.searchsorted(cumulative_variance, 0.8) + 1
-
     # Fit SVD with selected number of components on training set only
-    svd = TruncatedSVD(n_components=n_components_80_var, random_state=42)
+    svd = TruncatedSVD(n_components=100, random_state=42)
     X_train_lsa = svd.fit_transform(X_train_tfidf)
     X_test_lsa = svd.transform(X_test_tfidf)
 
