@@ -3,4 +3,4 @@ yuk/.ipynb_checkpoints/
 datl/.ipynb_checkpoints/
 yuk/credentials.json
 yuk/token.json
-regression_dataset/*.csv
+regression_dataset/
