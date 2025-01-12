@@ -1,4 +1,4 @@
-# Phát hiện ngôn ngữ độc hại trong chủ đề đánh giá sức khỏe tâm lý
+# Ứng dụng các phương pháp học máy trong chủ đề đánh giá sức khỏe tâm lý
 
 ### Thành viên:
 - Phạm Đức Duy - 23001855 - MAT3533 1
@@ -12,15 +12,30 @@ Bộ dữ liệu văn bản có 27977 mẫu văn bản đã được xử lý 1 
 
 ### Nội dung nghiên cứu, báo cáo:
 - Trích xuất đặc trưng từ văn bản:
-  - TF-IDF (Term Frequency - Inverse Document Frequency)
+	- TF-IDF (Term Frequency - Inverse Document Frequency)
 - Trực quan hóa:
-  - LSA (Latent Semantic Analysis)
+	- LSA (Latent Semantic Analysis)
 - Phân cụm dữ liệu:
-  - K - Means
-  - GMM (Gaussian Mixture Model)
+	- K - Means
+	- GMM (Gaussian Mixture Model)
 - Phân loại dữ liệu:
-  - KNN (K-Nearest Neighbors)
-  - Random Forest
-  - Logistic Regression
+	- KNN (K-Nearest Neighbors)
+	- Random Forest
+	- Logistic Regression
 
-Cấu trúc mã nguồn: Chạy theo thứ tự các Jupyter Notebook từ A đến K.
+### Bổ sung cho cuối kỳ:
+
+- Phân loại dữ liệu:
+	- Naive Bayes
+	- SVM (Support Vector Machine)
+  
+- Phân tích hồi quy: Trích xuất biến hồi quy sử dụng hàm quyết định của mô hình Logistic Regression tốt nhất.
+	- KNN (K-Nearest Neighbors) Regression
+	- Random Forest Regression
+
+### Cấu trúc mã nguồn
+
+- Giữa kì: Chạy theo thứ tự các Jupyter Notebook `.ipynb` từ A đến K.
+- Cuối kì:
+	- 2 chương phân loại mới chạy trong file `V_naive_bayes.ipynb` và `X_svm.ipynb`.
+		- Trích xuất bộ dữ liệu hồi quy ở file `Y_extract_regression_dataset.ipynb` và thực hiện hồi quy cho cả 2 mô hình K-NN và Random Forest trong file `Z_regression.ipynb`.
