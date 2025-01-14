@@ -1,5 +1,7 @@
 # Ứng dụng các phương pháp học máy trong chủ đề đánh giá sức khỏe tâm lý
 
+### [Github Repo: Mental health corpus](https://github.com/yuk068/mental-health-corpus)
+
 ### Thành viên:
 - Phạm Đức Duy - 23001855 - MAT3533 1
 - Trần Hoàng Đạt - 22001558 - MAT3533 5-6-7 
