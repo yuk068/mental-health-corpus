@@ -38,4 +38,5 @@ Bộ dữ liệu văn bản có 27977 mẫu văn bản đã được xử lý 1 
 - Giữa kì: Chạy theo thứ tự các Jupyter Notebook `.ipynb` từ A đến K.
 - Cuối kì:
 	- 2 chương phân loại mới chạy trong file `V_naive_bayes.ipynb` và `X_svm.ipynb`.
-		- Trích xuất bộ dữ liệu hồi quy ở file `Y_extract_regression_dataset.ipynb` và thực hiện hồi quy cho cả 2 mô hình K-NN và Random Forest trong file `Z_regression.ipynb`.
+	- Trích xuất bộ dữ liệu hồi quy ở file `Y_extract_regression_dataset.ipynb`.
+ 	- Thực hiện hồi quy cho cả 2 mô hình Linear Regression và Random Forest trong file `Z_regression.ipynb`.
